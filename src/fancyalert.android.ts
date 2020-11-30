@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as app from "tns-core-modules/application";
 import { Color } from "tns-core-modules/color";
 
