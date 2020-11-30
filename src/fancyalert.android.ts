@@ -1,6 +1,9 @@
 import * as app from "tns-core-modules/application";
 import { Color } from "tns-core-modules/color";
 
+let openAlert = null
+
+
 export * from "./common";
 
 declare var cn: any;
@@ -39,6 +42,7 @@ export class TNSFancyAlert {
           }
         })
       );
+      openAlert = alert
       alert.show();
     });
   }
@@ -66,6 +70,7 @@ export class TNSFancyAlert {
           }
         })
       );
+      openAlert = alert
       alert.show();
     });
   }
@@ -93,6 +98,7 @@ export class TNSFancyAlert {
           }
         })
       );
+      openAlert = alert
       alert.show();
     });
   }
@@ -120,6 +126,7 @@ export class TNSFancyAlert {
           }
         })
       );
+      openAlert = alert
       alert.show();
     });
   }
@@ -147,6 +154,7 @@ export class TNSFancyAlert {
           }
         })
       );
+      openAlert = alert
       alert.show();
     });
   }
@@ -202,7 +210,13 @@ export class TNSFancyAlert {
           })
         );
       }
+      openAlert = alert
       alert.show();
+    });
+  }
+  public static hide(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      openAlert.dismiss()
     });
   }
 }
