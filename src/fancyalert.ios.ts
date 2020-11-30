@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Color } from "tns-core-modules/color";
 import { TNSFancyAlertButton } from "./common";
 import {
