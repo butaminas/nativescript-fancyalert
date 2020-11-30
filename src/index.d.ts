@@ -228,6 +228,7 @@ export declare class TNSFancyAlert {
   ): void;
   static applyOptions(alert: any): void;
   static createAlert(width?: number): any;
+  static hide(): void;
   // Android only
   static showColorDialog(
     title: string,
