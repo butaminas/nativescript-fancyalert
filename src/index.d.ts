@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TNSFancyAlertButton } from "./common";
 export * from "./common";
 export interface IFancyAlertSupportedTypes {
