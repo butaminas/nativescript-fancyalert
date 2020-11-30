@@ -1,3 +1,4 @@
+// @ts-nocheck
 declare class SCLALertViewButtonBuilder extends SCLAlertViewBuilder__WithFluent {
   static alloc(): SCLALertViewButtonBuilder; // inherited from NSObject
 
