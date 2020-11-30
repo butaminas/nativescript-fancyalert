@@ -47,6 +47,9 @@
       "url": "https://github.com/bradmartin"
     }
   ],
+  "scripts": {
+    "postinstall": "tsc --outDir ./build"
+  }
   "bugs": {
     "url": "https://github.com/NathanWalker/nativescript-fancyalert/issues"
   },
