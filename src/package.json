@@ -18,7 +18,7 @@
     "preparedemo": "npm run build && cd ../demo && tns plugin remove nativescript-fancyalert && tns plugin add ../src && tns install && npx rimraf -- package-lock.json",
     "setup": "npm i && cd ../demo && npm install && cd ../src && npm run build && cd ../demo && tns plugin add ../src && cd ../src",
     "precommit": "lint-staged",
-    "postinstall": "tsc --outDir ./build"
+    "postinstall": "tsc"
   },
   "lint-staged": {
     "*.ts": [
