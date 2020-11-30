@@ -1,3 +1,4 @@
+// @ts-nocheck
 export class TNSFancyAlertButton {
   public label: string;
   public action: Function;
